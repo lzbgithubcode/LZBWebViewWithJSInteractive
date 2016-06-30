@@ -1,0 +1,27 @@
+<html>
+    
+    <head>
+        <title>这是本地的Web页面</title>
+    </head>
+    
+    <body>
+        <p>这个是body内容</p>
+        
+        <p>姓名：崖边树</p>
+        
+        <p>简书主页：</p>
+        <p >http://www.jianshu.com/users/d21698127416/latest_articles</p>
+        
+        <button type = "button" onclick = "locationFunction()" > 点击调用OC方法  </button>
+        
+        <script type = "text/javascript">
+            function locationFunction()
+            {
+              window.location.href = "zimu://callName_?http://www.jianshu.com/users/d21698127416/latest_articles"
+              
+
+            }
+        </script>
+    </body>
+    
+</html>
