@@ -9,6 +9,7 @@
 #import "LZBJStoOCFromURLMethodVC.h"
 #import <WebKit/WebKit.h>
 #import "NSObject + MethodExtension.h"
+#import "LZBAlterView.h"
 
 #define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
@@ -72,6 +73,9 @@
 - (void)callName:(NSString *)string
 {
     NSLog(@"详细讲解网站是：\n%@",string);
+    [LZBAlterView lzb_alterViewWithText:[NSString stringWithFormat:@"传过来的参数：%@",string] OneTitle:@"知道了" TwoTitle:nil ThreeTitle:nil handleBlock:^(LZBAlterView *alterView, NSInteger btntag) {
+        [alterView removeAlterView];
+    }];
 }
 
 

@@ -13,6 +13,7 @@
 		1851DD881D17F39200DCA70C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1851DD861D17F39200DCA70C /* Main.storyboard */; };
 		1851DD8A1D17F39200DCA70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1851DD891D17F39200DCA70C /* Assets.xcassets */; };
 		1851DD8D1D17F39200DCA70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1851DD8B1D17F39200DCA70C /* LaunchScreen.storyboard */; };
+		18CB3D661D2AA76200536108 /* LZBAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3D651D2AA76200536108 /* LZBAlterView.m */; };
 		18ECE0E31D20EAC0007F5CD6 /* firstIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */; };
 		18ECE0E81D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */; };
 		18ECE0EE1D20EE00007F5CD6 /* LZBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0ED1D20EE00007F5CD6 /* LZBDataModel.m */; };
@@ -30,6 +31,8 @@
 		1851DD891D17F39200DCA70C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1851DD8C1D17F39200DCA70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1851DD8E1D17F39200DCA70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CB3D641D2AA76200536108 /* LZBAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBAlterView.h; sourceTree = "<group>"; };
+		18CB3D651D2AA76200536108 /* LZBAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBAlterView.m; sourceTree = "<group>"; };
 		18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = firstIndex.html; sourceTree = "<group>"; };
 		18ECE0E61D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBJStoOCFromURLMethodVC.h; sourceTree = "<group>"; };
 		18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBJStoOCFromURLMethodVC.m; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		1851DD7C1D17F39200DCA70C /* LZBWebViewWithJSInteractive */ = {
 			isa = PBXGroup;
 			children = (
+				18CB3D601D2AA69700536108 /* Other */,
 				18ECE1541D256A40007F5CD6 /* Category */,
 				18ECE0EF1D20EE28007F5CD6 /* CommonModel */,
 				18ECE0E51D20ED45007F5CD6 /* JS调用OC */,
@@ -93,6 +97,15 @@
 				18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18CB3D601D2AA69700536108 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18CB3D641D2AA76200536108 /* LZBAlterView.h */,
+				18CB3D651D2AA76200536108 /* LZBAlterView.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		18ECE0E41D20ED38007F5CD6 /* OC调用JS */ = {
@@ -200,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CB3D661D2AA76200536108 /* LZBAlterView.m in Sources */,
 				18ECE0E81D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m in Sources */,
 				1851DD851D17F39200DCA70C /* ViewController.m in Sources */,
 				18ECE1571D256A7E007F5CD6 /* NSObject + MethodExtension.m in Sources */,
