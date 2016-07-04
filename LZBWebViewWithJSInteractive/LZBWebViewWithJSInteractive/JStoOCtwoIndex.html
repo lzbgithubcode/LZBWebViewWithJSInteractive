@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>第二个web</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        
+        <p>JS通过JavaScriptCore/JavaScriptCore.hOC的方法</p>
+        
+        <p>姓名：崖边树</p>
+
+        <p>简书主页：</p>
+        <p >http://www.jianshu.com/users/d21698127416/latest_articles</p>
+        
+        <button type = "button" onclick = "locationFunction()" > JS调OC第二法无参数 </button>
+         <button type = "button" onclick = "locationFunction2()" > JS调OC第二法传参数 </button>
+        
+        <script type = "text/javascript">
+            function locationFunction()
+            {
+                //调用OC的方法,没有参数
+                jstoocNoPrams();
+                
+            }
+        
+            function locationFunction2()
+            {
+              //调用OC的第二个方法
+              jstoocHavePrams('参数1','参数2','参数3');
+            }
+        </script>
+    </body>
+    
+</html>

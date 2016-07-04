@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LZBDataModel.h"
 #import "LZBJStoOCFromURLMethodVC.h"
+#import "LZBJStoOCFromJSContextViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -25,7 +26,7 @@
     [self.view addSubview:self.tableView];
     self.datas = @[
     [[LZBDataModel alloc]initWithVC:[[LZBJStoOCFromURLMethodVC alloc]init] withTitle:@"JS调用OC-URL方法"],
-    [[LZBDataModel alloc]initWithVC:nil withTitle:@"JS调用OC第二方法"],
+    [[LZBDataModel alloc]initWithVC:[[LZBJStoOCFromJSContextViewController alloc]init] withTitle:@"JS调用OC第二方法"],
     [[LZBDataModel alloc]initWithVC:nil withTitle:@"OC调用JS第一方法"],
     [[LZBDataModel alloc]initWithVC:nil withTitle:@"OC调用JS第二方法"],];
     

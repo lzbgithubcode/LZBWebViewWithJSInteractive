@@ -7,16 +7,11 @@
 //
 
 #import "LZBJStoOCFromURLMethodVC.h"
-#import <WebKit/WebKit.h>
-#import "NSObject + MethodExtension.h"
-#import "LZBAlterView.h"
 
-#define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
 
-@interface LZBJStoOCFromURLMethodVC ()<UIWebViewDelegate>
+@interface LZBJStoOCFromURLMethodVC ()
 
-@property (nonatomic, strong) UIWebView *webView;
+
 
 @end
 
@@ -24,8 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.webView];
     [self loadWeb];
    
 }
@@ -34,7 +27,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"firstIndex.html" ofType:nil];
     NSString *htmlString = [[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:htmlString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
-    self.webView.dataDetectorTypes = UIDataDetectorTypeLink;
+   
 }
 
 #pragma mark - webView的delegate
@@ -80,17 +73,6 @@
 
 
 
-#pragma mark - 懒加载
-- (UIWebView *)webView
-{
-   if(_webView == nil)
-   {
-       _webView = [[UIWebView alloc]init];
-       _webView.delegate =self;
-       _webView.frame = self.view.bounds;
-   }
-    return _webView;
-}
 
 
 

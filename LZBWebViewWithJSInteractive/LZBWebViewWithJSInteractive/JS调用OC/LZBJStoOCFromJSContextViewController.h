@@ -1,14 +1,14 @@
 //
-//  LZBJStoOCFromURLMethodVC.h
+//  LZBJStoOCFromJSContextViewController.h
 //  LZBWebViewWithJSInteractive
 //
-//  Created by apple on 16/6/27.
+//  Created by apple on 16/7/4.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "LZBWebBaseViewController.h"
 
-@interface LZBJStoOCFromURLMethodVC : LZBWebBaseViewController
+@interface LZBJStoOCFromJSContextViewController : LZBWebBaseViewController
 
 @end

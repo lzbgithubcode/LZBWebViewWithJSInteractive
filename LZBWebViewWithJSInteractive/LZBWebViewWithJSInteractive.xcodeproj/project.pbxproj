@@ -14,6 +14,9 @@
 		1851DD8A1D17F39200DCA70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1851DD891D17F39200DCA70C /* Assets.xcassets */; };
 		1851DD8D1D17F39200DCA70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1851DD8B1D17F39200DCA70C /* LaunchScreen.storyboard */; };
 		18CB3D661D2AA76200536108 /* LZBAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3D651D2AA76200536108 /* LZBAlterView.m */; };
+		18CB3D691D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3D681D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.m */; };
+		18CB3D6C1D2AADF500536108 /* LZBWebBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3D6B1D2AADF500536108 /* LZBWebBaseViewController.m */; };
+		18CB3D6E1D2AB3B600536108 /* JStoOCtwoIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18CB3D6D1D2AB3B600536108 /* JStoOCtwoIndex.html */; };
 		18ECE0E31D20EAC0007F5CD6 /* firstIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */; };
 		18ECE0E81D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */; };
 		18ECE0EE1D20EE00007F5CD6 /* LZBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0ED1D20EE00007F5CD6 /* LZBDataModel.m */; };
@@ -33,6 +36,11 @@
 		1851DD8E1D17F39200DCA70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CB3D641D2AA76200536108 /* LZBAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBAlterView.h; sourceTree = "<group>"; };
 		18CB3D651D2AA76200536108 /* LZBAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBAlterView.m; sourceTree = "<group>"; };
+		18CB3D671D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBJStoOCFromJSContextViewController.h; sourceTree = "<group>"; };
+		18CB3D681D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBJStoOCFromJSContextViewController.m; sourceTree = "<group>"; };
+		18CB3D6A1D2AADF500536108 /* LZBWebBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBWebBaseViewController.h; sourceTree = "<group>"; };
+		18CB3D6B1D2AADF500536108 /* LZBWebBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBWebBaseViewController.m; sourceTree = "<group>"; };
+		18CB3D6D1D2AB3B600536108 /* JStoOCtwoIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JStoOCtwoIndex.html; sourceTree = "<group>"; };
 		18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = firstIndex.html; sourceTree = "<group>"; };
 		18ECE0E61D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBJStoOCFromURLMethodVC.h; sourceTree = "<group>"; };
 		18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBJStoOCFromURLMethodVC.m; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 			children = (
 				1851DD7E1D17F39200DCA70C /* main.m */,
 				18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */,
+				18CB3D6D1D2AB3B600536108 /* JStoOCtwoIndex.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -104,6 +113,8 @@
 			children = (
 				18CB3D641D2AA76200536108 /* LZBAlterView.h */,
 				18CB3D651D2AA76200536108 /* LZBAlterView.m */,
+				18CB3D6A1D2AADF500536108 /* LZBWebBaseViewController.h */,
+				18CB3D6B1D2AADF500536108 /* LZBWebBaseViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -120,6 +131,8 @@
 			children = (
 				18ECE0E61D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.h */,
 				18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */,
+				18CB3D671D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.h */,
+				18CB3D681D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.m */,
 			);
 			path = "JS调用OC";
 			sourceTree = "<group>";
@@ -199,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CB3D6E1D2AB3B600536108 /* JStoOCtwoIndex.html in Resources */,
 				1851DD8D1D17F39200DCA70C /* LaunchScreen.storyboard in Resources */,
 				1851DD8A1D17F39200DCA70C /* Assets.xcassets in Resources */,
 				18ECE0E31D20EAC0007F5CD6 /* firstIndex.html in Resources */,
@@ -213,11 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CB3D691D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.m in Sources */,
 				18CB3D661D2AA76200536108 /* LZBAlterView.m in Sources */,
 				18ECE0E81D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m in Sources */,
 				1851DD851D17F39200DCA70C /* ViewController.m in Sources */,
 				18ECE1571D256A7E007F5CD6 /* NSObject + MethodExtension.m in Sources */,
 				1851DD821D17F39200DCA70C /* AppDelegate.m in Sources */,
+				18CB3D6C1D2AADF500536108 /* LZBWebBaseViewController.m in Sources */,
 				1851DD7F1D17F39200DCA70C /* main.m in Sources */,
 				18ECE0EE1D20EE00007F5CD6 /* LZBDataModel.m in Sources */,
 			);
