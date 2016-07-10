@@ -9,7 +9,14 @@
 #import "LZBJStoOCFromJSContextViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 
-@interface LZBJStoOCFromJSContextViewController ()
+
+@protocol LZBJSExport <JSExport>
+
+- (void)callChangeColor;
+
+@end
+
+@interface LZBJStoOCFromJSContextViewController ()<LZBJSExport>
 
 @end
 
@@ -18,7 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadWebData];
+    //1.block方式
     [self handleJScallOC];
+    //2.协议的方式
+   // [self regiseterResponser];
 }
 
 - (void)loadWebData
@@ -26,7 +36,6 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"JStoOCtwoIndex.html" ofType:nil];
     NSURL *localURL = [[NSURL alloc]initFileURLWithPath:path];
     [self.webView loadRequest:[NSURLRequest requestWithURL:localURL]];
-    
 }
 
 - (void)handleJScallOC
@@ -42,6 +51,7 @@
         }];
     };
     
+    
    //点击传参数 jstoocHavePrams方法名称
     context[@"jstoocHavePrams"] = ^(){
         //获得参数
@@ -56,13 +66,20 @@
         [LZBAlterView lzb_alterViewWithText:@"点击了传参数按钮" OneTitle:arraySting TwoTitle:@"知道了" ThreeTitle:nil handleBlock:^(LZBAlterView *alterView, NSInteger btntag) {
             [alterView removeAlterView];
         }];
-        
-        
-        
-        
-        
-    
     };
+}
+
+
+#pragma mark - 第二种方式JSEport协议方式
+- (void)regiseterResponser
+{
+    JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    [context setObject:self forKeyedSubscript:@"change"];
+}
+
+- (void)callChangeColor
+{
+    self.webView.backgroundColor = [UIColor redColor];
 }
 
 
