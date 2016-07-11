@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title =@"JavaScriptCore方法";
     [self loadWebData];
     //1.block方式
     [self handleJScallOC];

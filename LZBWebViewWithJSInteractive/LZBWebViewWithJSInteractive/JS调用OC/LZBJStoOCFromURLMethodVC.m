@@ -17,8 +17,10 @@
 
 @implementation LZBJStoOCFromURLMethodVC
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title =@"URL方法";
     [self loadWeb];
    
 }

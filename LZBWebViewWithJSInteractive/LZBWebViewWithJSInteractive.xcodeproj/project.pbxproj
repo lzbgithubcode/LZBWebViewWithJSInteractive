@@ -17,6 +17,8 @@
 		18CB3D691D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3D681D2AADAA00536108 /* LZBJStoOCFromJSContextViewController.m */; };
 		18CB3D6C1D2AADF500536108 /* LZBWebBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3D6B1D2AADF500536108 /* LZBWebBaseViewController.m */; };
 		18CB3D6E1D2AB3B600536108 /* JStoOCtwoIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18CB3D6D1D2AB3B600536108 /* JStoOCtwoIndex.html */; };
+		18CB3EB61D3276CD00536108 /* LZBOCtoJSOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3EB51D3276CD00536108 /* LZBOCtoJSOneViewController.m */; };
+		18CB3EB81D32789F00536108 /* OCtoJSfirstIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18CB3EB71D32789F00536108 /* OCtoJSfirstIndex.html */; };
 		18ECE0E31D20EAC0007F5CD6 /* firstIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */; };
 		18ECE0E81D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */; };
 		18ECE0EE1D20EE00007F5CD6 /* LZBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0ED1D20EE00007F5CD6 /* LZBDataModel.m */; };
@@ -41,6 +43,9 @@
 		18CB3D6A1D2AADF500536108 /* LZBWebBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBWebBaseViewController.h; sourceTree = "<group>"; };
 		18CB3D6B1D2AADF500536108 /* LZBWebBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBWebBaseViewController.m; sourceTree = "<group>"; };
 		18CB3D6D1D2AB3B600536108 /* JStoOCtwoIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JStoOCtwoIndex.html; sourceTree = "<group>"; };
+		18CB3EB41D3276CD00536108 /* LZBOCtoJSOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBOCtoJSOneViewController.h; sourceTree = "<group>"; };
+		18CB3EB51D3276CD00536108 /* LZBOCtoJSOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBOCtoJSOneViewController.m; sourceTree = "<group>"; };
+		18CB3EB71D32789F00536108 /* OCtoJSfirstIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = OCtoJSfirstIndex.html; sourceTree = "<group>"; };
 		18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = firstIndex.html; sourceTree = "<group>"; };
 		18ECE0E61D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBJStoOCFromURLMethodVC.h; sourceTree = "<group>"; };
 		18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBJStoOCFromURLMethodVC.m; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 				1851DD7E1D17F39200DCA70C /* main.m */,
 				18ECE0E21D20EAC0007F5CD6 /* firstIndex.html */,
 				18CB3D6D1D2AB3B600536108 /* JStoOCtwoIndex.html */,
+				18CB3EB71D32789F00536108 /* OCtoJSfirstIndex.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +128,8 @@
 		18ECE0E41D20ED38007F5CD6 /* OC调用JS */ = {
 			isa = PBXGroup;
 			children = (
+				18CB3EB41D3276CD00536108 /* LZBOCtoJSOneViewController.h */,
+				18CB3EB51D3276CD00536108 /* LZBOCtoJSOneViewController.m */,
 			);
 			path = "OC调用JS";
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 			files = (
 				18CB3D6E1D2AB3B600536108 /* JStoOCtwoIndex.html in Resources */,
 				1851DD8D1D17F39200DCA70C /* LaunchScreen.storyboard in Resources */,
+				18CB3EB81D32789F00536108 /* OCtoJSfirstIndex.html in Resources */,
 				1851DD8A1D17F39200DCA70C /* Assets.xcassets in Resources */,
 				18ECE0E31D20EAC0007F5CD6 /* firstIndex.html in Resources */,
 				1851DD881D17F39200DCA70C /* Main.storyboard in Resources */,
@@ -235,6 +244,7 @@
 				1851DD821D17F39200DCA70C /* AppDelegate.m in Sources */,
 				18CB3D6C1D2AADF500536108 /* LZBWebBaseViewController.m in Sources */,
 				1851DD7F1D17F39200DCA70C /* main.m in Sources */,
+				18CB3EB61D3276CD00536108 /* LZBOCtoJSOneViewController.m in Sources */,
 				18ECE0EE1D20EE00007F5CD6 /* LZBDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
