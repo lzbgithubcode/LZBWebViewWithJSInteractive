@@ -29,7 +29,7 @@
     //1.block方式
     [self handleJScallOC];
     //2.协议的方式
-   // [self regiseterResponser];
+    [self regiseterResponser];
 }
 
 - (void)loadWebData
@@ -80,7 +80,12 @@
 
 - (void)callChangeColor
 {
-    self.webView.backgroundColor = [UIColor redColor];
+    self.webView.backgroundColor = [self getRandColor];
+}
+
+- (UIColor *)getRandColor
+{
+   return [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:255.0/255.0];
 }
 
 

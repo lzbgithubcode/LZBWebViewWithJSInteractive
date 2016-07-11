@@ -26,7 +26,7 @@
 }
 - (void)loadWeb
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"firstIndex.html" ofType:nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"JStoOCfirstIndex.html" ofType:nil];
     NSString *htmlString = [[NSString alloc]initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:htmlString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
    
