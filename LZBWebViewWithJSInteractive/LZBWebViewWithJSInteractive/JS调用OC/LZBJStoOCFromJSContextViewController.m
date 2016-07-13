@@ -47,9 +47,12 @@
     //点击了无参数，jstoocNoPrams是JS的方法名称
     context[@"jstoocNoPrams"] = ^(){
         NSLog(@"点击了没有传参数按钮");
-        [LZBAlterView lzb_alterViewWithText:@"点击了没有参数按钮" OneTitle:@"知道了" TwoTitle:nil ThreeTitle:nil handleBlock:^(LZBAlterView *alterView, NSInteger btntag) {
-            [alterView removeAlterView];
-        }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [LZBAlterView lzb_alterViewWithText:@"点击了没有参数按钮" OneTitle:@"知道了" TwoTitle:nil ThreeTitle:nil handleBlock:^(LZBAlterView *alterView, NSInteger btntag) {
+                [alterView removeAlterView];
+            }];
+        });
+        
     };
     
     
@@ -64,9 +67,12 @@
             arraySting = [arraySting stringByAppendingFormat:@"%@,",obj];
         }
         
-        [LZBAlterView lzb_alterViewWithText:@"点击了传参数按钮" OneTitle:arraySting TwoTitle:@"知道了" ThreeTitle:nil handleBlock:^(LZBAlterView *alterView, NSInteger btntag) {
-            [alterView removeAlterView];
-        }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [LZBAlterView lzb_alterViewWithText:@"点击了传参数按钮" OneTitle:arraySting TwoTitle:@"知道了" ThreeTitle:nil handleBlock:^(LZBAlterView *alterView, NSInteger btntag) {
+                [alterView removeAlterView];
+            }];
+        });
+       
     };
 }
 
