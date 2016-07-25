@@ -21,6 +21,8 @@
 		18CB3EB81D32789F00536108 /* OCtoJSfirstIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18CB3EB71D32789F00536108 /* OCtoJSfirstIndex.html */; };
 		18CB3EDE1D33EA9200536108 /* LZBOCtoJStwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB3EDD1D33EA9200536108 /* LZBOCtoJStwoViewController.m */; };
 		18CB3EE01D33F07F00536108 /* OCtoJStwoIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18CB3EDF1D33F07F00536108 /* OCtoJStwoIndex.html */; };
+		18E8FE321D446A1D0026DDC4 /* developerCode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18E8FE311D446A1D0026DDC4 /* developerCode.jpg */; };
+		18E8FE351D446AE60026DDC4 /* LZBSweepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8FE341D446AE60026DDC4 /* LZBSweepView.m */; };
 		18ECE0E31D20EAC0007F5CD6 /* JStoOCfirstIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE0E21D20EAC0007F5CD6 /* JStoOCfirstIndex.html */; };
 		18ECE0E81D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */; };
 		18ECE0EE1D20EE00007F5CD6 /* LZBDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE0ED1D20EE00007F5CD6 /* LZBDataModel.m */; };
@@ -51,6 +53,9 @@
 		18CB3EDC1D33EA9200536108 /* LZBOCtoJStwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBOCtoJStwoViewController.h; sourceTree = "<group>"; };
 		18CB3EDD1D33EA9200536108 /* LZBOCtoJStwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBOCtoJStwoViewController.m; sourceTree = "<group>"; };
 		18CB3EDF1D33F07F00536108 /* OCtoJStwoIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = OCtoJStwoIndex.html; sourceTree = "<group>"; };
+		18E8FE311D446A1D0026DDC4 /* developerCode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = developerCode.jpg; sourceTree = "<group>"; };
+		18E8FE331D446AE60026DDC4 /* LZBSweepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBSweepView.h; sourceTree = "<group>"; };
+		18E8FE341D446AE60026DDC4 /* LZBSweepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBSweepView.m; sourceTree = "<group>"; };
 		18ECE0E21D20EAC0007F5CD6 /* JStoOCfirstIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JStoOCfirstIndex.html; sourceTree = "<group>"; };
 		18ECE0E61D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBJStoOCFromURLMethodVC.h; sourceTree = "<group>"; };
 		18ECE0E71D20ED94007F5CD6 /* LZBJStoOCFromURLMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBJStoOCFromURLMethodVC.m; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		1851DD7D1D17F39200DCA70C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18E8FE311D446A1D0026DDC4 /* developerCode.jpg */,
 				1851DD7E1D17F39200DCA70C /* main.m */,
 				18ECE0E21D20EAC0007F5CD6 /* JStoOCfirstIndex.html */,
 				18CB3D6D1D2AB3B600536108 /* JStoOCtwoIndex.html */,
@@ -127,6 +133,8 @@
 				18CB3D651D2AA76200536108 /* LZBAlterView.m */,
 				18CB3D6A1D2AADF500536108 /* LZBWebBaseViewController.h */,
 				18CB3D6B1D2AADF500536108 /* LZBWebBaseViewController.m */,
+				18E8FE331D446AE60026DDC4 /* LZBSweepView.h */,
+				18E8FE341D446AE60026DDC4 /* LZBSweepView.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				18CB3EB81D32789F00536108 /* OCtoJSfirstIndex.html in Resources */,
 				1851DD8A1D17F39200DCA70C /* Assets.xcassets in Resources */,
 				18ECE0E31D20EAC0007F5CD6 /* JStoOCfirstIndex.html in Resources */,
+				18E8FE321D446A1D0026DDC4 /* developerCode.jpg in Resources */,
 				1851DD881D17F39200DCA70C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +262,7 @@
 				18ECE1571D256A7E007F5CD6 /* NSObject + MethodExtension.m in Sources */,
 				1851DD821D17F39200DCA70C /* AppDelegate.m in Sources */,
 				18CB3D6C1D2AADF500536108 /* LZBWebBaseViewController.m in Sources */,
+				18E8FE351D446AE60026DDC4 /* LZBSweepView.m in Sources */,
 				1851DD7F1D17F39200DCA70C /* main.m in Sources */,
 				18CB3EB61D3276CD00536108 /* LZBOCtoJSOneViewController.m in Sources */,
 				18ECE0EE1D20EE00007F5CD6 /* LZBDataModel.m in Sources */,
