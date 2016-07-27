@@ -33,12 +33,10 @@
 
 - (void)handdleOCCallJS
 {
-  //获得WebView的运行环境的对象
+    //获得WebView的运行环境的对象
     JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
-    
     //调用方法（注意：这里是JS里面的定义的方法）
     NSString *callJSstring = @"sendJSString('参数：OC call JS test 子木')";
-    
     [context evaluateScript:callJSstring];
 }
 
